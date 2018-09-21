@@ -1,0 +1,9 @@
+{
+  "compact": false,
+  "plugins": [
+    "import-graphql",
+    "@babel/plugin-proposal-export-default-from",
+    "@babel/plugin-transform-async-to-generator"
+  ],
+  "presets": ["@babel/preset-env"]
+}

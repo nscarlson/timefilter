@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "timefilter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "react-scripts build",
+    "dev": "pm2 start process.config.js",
+    "electron": "electron ."
+  },
+  "repository": "https://github.com/nscarlson/timefilter",
+  "keywords": [
+    "history",
+    "knowledge",
+    "encyclopedia",
+    "timeline"
+  ],
+  "author": "Nathan Carlson",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-stage-0": "^7.0.0",
+    "@babel/register": "^7.0.0"
+  }
+}
