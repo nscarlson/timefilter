@@ -1,7 +1,7 @@
-import Event from "./Event";
+const Event = require("./Event");
 
 const models = {
   Event
 };
 
-export default models;
+module.exports = models;

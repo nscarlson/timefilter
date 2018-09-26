@@ -1,3 +1,3 @@
-import models from "./models";
+const models = require("./models");
 
-export default models;
+module.exports = models;

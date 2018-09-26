@@ -1,7 +1,5 @@
-const event = async (object, args, context) => {
-  const result = await Event.find();
+import { Event } from "models";
 
-  return result;
-};
+const event = async (object, args, context) => Event.findOne();
 
 export default event;

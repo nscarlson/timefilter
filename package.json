@@ -6,7 +6,7 @@
   "main": "src/main.js",
   "scripts": {
     "build": "react-scripts build",
-    "dev": "pm2 start process.config.js",
+    "dev": "pm2 start process.config.js && pm2 logs",
     "electron": "electron ."
   },
   "repository": "https://github.com/nscarlson/timefilter",
@@ -21,12 +21,7 @@
   "workspaces": [
     "packages/*"
   ],
-  "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.1.0",
-    "@babel/plugin-proposal-export-default-from": "^7.0.0",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-stage-0": "^7.0.0",
-    "@babel/register": "^7.0.0"
+    "lerna": "^3.4.0"
   }
 }

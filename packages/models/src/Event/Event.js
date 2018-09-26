@@ -1,8 +1,8 @@
-const eventSchema = new mongoose.Schema({
+const mongoose = require("mongoose");
+
+const Event = mongoose.model("Event", {
   intervalBegin: Number,
   intervalEnd: Number
 });
 
-const Event = mongoose.model("Event", eventSchema);
-
-export default Event;
+module.exports = Event;
