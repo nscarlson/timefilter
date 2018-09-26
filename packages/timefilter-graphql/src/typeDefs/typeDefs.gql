@@ -1,5 +1,12 @@
 type Query {
   event: Event
+  cities: [City]
+}
+
+type City {
+  name: String
+  lat: Float
+  long: Float
 }
 
 type Event {
