@@ -1,0 +1,24 @@
+{
+    "name": "eslint-config-timefilter",
+    "version": "1.0.0",
+    "description": "Timefilter eslint configuration",
+    "scripts": {
+        "lint": "eslint ."
+    },
+    "author": "Nathan Carlson",
+    "license": "MIT",
+    "dependencies": {
+        "babel-eslint": "^8.2.3",
+        "eslint": "^4.19.1",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-config-standard-react": "^6.0.0",
+        "eslint-plugin-import": "^2.12.0",
+        "eslint-plugin-jest": "^21.15.2",
+        "eslint-plugin-node": "^6.0.1",
+        "eslint-plugin-prettier": "^2.6.0",
+        "eslint-plugin-promise": "^3.8.0",
+        "eslint-plugin-react": "^7.8.2",
+        "prettier": "^1.12.1",
+        "prettier-eslint": "^8.8.1"
+    }
+}

@@ -1,0 +1,24 @@
+type Query {
+  event: Event
+  cities: [City]
+}
+
+type City {
+  name: String
+  lat: Float
+  long: Float
+}
+
+type Event {
+  intervalBegin: Int
+  intervalEnd: Int
+}
+
+type GeographicRegion {
+  boundaries: [Int]
+}
+
+type GeographicPoint {
+  lat: Float
+  long: Float
+}
