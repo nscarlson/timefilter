@@ -1,1 +1,1 @@
-export default from "./typeDefs.gql";
+export { default } from "./typeDefs.gql";

@@ -14,7 +14,8 @@
     "isomorphic-fetch": "^2.2.1",
     "models": "^1.0.0",
     "source-map-support": "^0.5.5",
-    "uuid": "^3.2.1"
+    "uuid": "^3.2.1",
+    "webpack-node-externals": "^1.7.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
@@ -27,7 +28,7 @@
     "@babel/runtime": "^7.0.0",
     "babel-loader": "^8.0.2",
     "babel-plugin-graphql-tag": "^1.6.0",
-    "webpack": "^4.19.1",
-    "webpack-cli": "^3.1.0"
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   }
 }
