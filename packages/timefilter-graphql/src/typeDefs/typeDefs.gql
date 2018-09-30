@@ -1,24 +1,56 @@
+scalar Date
+
 type Query {
-  event: Event
+  city(id: ID!): City
   cities: [City]
+  event: Event
+  person(id: ID!): Person
+}
+
+type Mutation {
+  createCity(input: CreateCityInput!): City
+  createPerson(input: CreatePersonInput!): Person
 }
 
 type City {
+  id: ID!
   name: String
   lat: Float
   long: Float
 }
 
+input CreateCityInput {
+  name: String!
+  lat: Float!
+  long: Float!
+}
+
+type Person {
+  id: ID!
+  name: String!
+  birthDate: Date!
+  deathDate: Date!
+}
+
+input CreatePersonInput {
+  name: String!
+  birthDate: Date!
+  deathDate: Date!
+}
+
 type Event {
+  id: ID!
   intervalBegin: Int
   intervalEnd: Int
 }
 
 type GeographicRegion {
+  id: ID!
   boundaries: [Int]
 }
 
 type GeographicPoint {
+  id: ID!
   lat: Float
   long: Float
 }

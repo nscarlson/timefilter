@@ -1,8 +1,5 @@
 import { ApolloServer } from "apollo-server";
 import db from "db";
-
-console.log("db:", db);
-
 import resolvers from "./resolvers";
 import typeDefs from "./typeDefs";
 
