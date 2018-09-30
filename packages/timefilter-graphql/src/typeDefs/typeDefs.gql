@@ -1,24 +1,39 @@
 type Query {
+  city(id: ID!): City
   event: Event
   cities: [City]
 }
 
+type Mutation {
+  createCity(input: CreateCityInput!): City
+}
+
 type City {
+  id: ID!
   name: String
   lat: Float
   long: Float
 }
 
+input CreateCityInput {
+  name: String!
+  lat: Float!
+  long: Float!
+}
+
 type Event {
+  id: ID!
   intervalBegin: Int
   intervalEnd: Int
 }
 
 type GeographicRegion {
+  id: ID!
   boundaries: [Int]
 }
 
 type GeographicPoint {
+  id: ID!
   lat: Float
   long: Float
 }

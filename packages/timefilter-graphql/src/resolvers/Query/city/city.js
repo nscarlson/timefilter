@@ -1,8 +1,10 @@
 import { City } from "models";
 
 const city = async (object, args, context) => {
-  const result = await City.find();
-  console.log("result:", result);
+  const result = await City.findOne({
+    _id: args.id
+  });
+
   return result;
 };
 

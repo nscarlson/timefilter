@@ -1,11 +1,9 @@
-import city from "./city";
-import event from "./event";
+import Mutation from "./Mutation";
+import Query from "./Query";
 
 const resolvers = {
-  Query: {
-    cities: city,
-    event
-  }
+  Mutation,
+  Query
 };
 
 export default resolvers;
