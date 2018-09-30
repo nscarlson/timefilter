@@ -1,7 +1,9 @@
 import createCity from "./createCity";
+import createPerson from "./createPerson";
 
 const Mutation = {
-  createCity
+  createCity,
+  createPerson
 };
 
 export default Mutation;

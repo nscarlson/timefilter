@@ -1,11 +1,15 @@
+scalar Date
+
 type Query {
   city(id: ID!): City
-  event: Event
   cities: [City]
+  event: Event
+  person(id: ID!): Person
 }
 
 type Mutation {
   createCity(input: CreateCityInput!): City
+  createPerson(input: CreatePersonInput!): Person
 }
 
 type City {
@@ -19,6 +23,19 @@ input CreateCityInput {
   name: String!
   lat: Float!
   long: Float!
+}
+
+type Person {
+  id: ID!
+  name: String!
+  birthDate: Date!
+  deathDate: Date!
+}
+
+input CreatePersonInput {
+  name: String!
+  birthDate: Date!
+  deathDate: Date!
 }
 
 type Event {
