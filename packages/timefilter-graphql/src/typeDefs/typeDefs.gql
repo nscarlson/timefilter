@@ -4,11 +4,14 @@ type Query {
   city(id: ID!): City
   cities: [City]
   event: Event
+  geographicSite(id: ID!): GeographicSite
+  geographicSites: [GeographicSite]
   person(id: ID!): Person
 }
 
 type Mutation {
   createCity(input: CreateCityInput!): City
+  createGeographicSite(input: CreateGeographicSiteInput!): GeographicSite
   createPerson(input: CreatePersonInput!): Person
 }
 
@@ -38,6 +41,17 @@ input CreatePersonInput {
   deathDate: Date!
 }
 
+type GeographicSite {
+  id: ID!
+  name: String!
+  location: GeographicPoint!
+}
+
+input CreateGeographicSiteInput {
+  name: String!
+  location: CreateGeographicPointInput!
+}
+
 type Event {
   id: ID!
   intervalBegin: Int
@@ -46,11 +60,16 @@ type Event {
 
 type GeographicRegion {
   id: ID!
-  boundaries: [Int]
+  boundaries: [Int]!
 }
 
 type GeographicPoint {
   id: ID!
-  lat: Float
-  long: Float
+  lat: Float!
+  long: Float!
+}
+
+input CreateGeographicPointInput {
+  lat: Float!
+  long: Float!
 }
