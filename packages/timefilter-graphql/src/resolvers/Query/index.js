@@ -1,1 +1,1 @@
-export default from "./Query";
+export { default } from "./Query";

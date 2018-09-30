@@ -3,11 +3,10 @@
   "name": "timefilter",
   "version": "1.0.0",
   "description": "",
-  "main": "src/main.js",
   "scripts": {
-    "build": "react-scripts build",
-    "dev": "pm2 start process.config.js && pm2 logs",
-    "electron": "electron ."
+    "dev": "yarn build:dev && pm2 start process.config.js && pm2 logs",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production"
   },
   "repository": "https://github.com/nscarlson/timefilter",
   "keywords": [

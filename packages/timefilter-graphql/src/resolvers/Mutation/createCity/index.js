@@ -1,1 +1,1 @@
-export default from "./createCity";
+export { default } from "./createCity";

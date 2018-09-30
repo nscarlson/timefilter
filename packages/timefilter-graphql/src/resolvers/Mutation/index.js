@@ -1,1 +1,1 @@
-export default from "./Mutation";
+export { default } from "./Mutation";
